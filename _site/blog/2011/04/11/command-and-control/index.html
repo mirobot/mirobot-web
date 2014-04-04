@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Command and Control</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='/assets/main-207637ce173ffcb4c5404797136b2f44.css' rel='stylesheet' type='text/css' />
+
+
+<script src='/assets/main-0c335e38373658f1b9c86025230d3c02.js' type='text/javascript'></script>
+
+
+    </head>
+    <body>
+
+        <div id="main">
+          <div id="header">
+            <div class="inner">
+              <h1 class="title"><a href="/">Mirobot</a></h1>
+              <ul>
+                <li><a href="/about/">About</a></li>
+                <li class="selected"><a href="/blog/">Blog</a></li>
+                <li><a href="/build/">Build</a></li>
+                <li><a href="/buy/" class="buy">Buy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="blogpost">
+  <div class="inner">
+    <span class="date">11 Apr 2011</span>
+    <h2><a href="/blog/2011/04/11/command-and-control/">Command and Control</a></h2>
+    <p><p>I spent today hacking at a couple of things on the Arduinobot; a Logo based command set based on the original Turtle Logo and making a prototype chassis. This post is about the Logo command set and another will follow with what I learned from the prototype.</p>
+
+<p>I found a very small example of some original BBC Turtle Logo programming <a href="http://www.classicacorn.freeuk.com/8bit_focus/logo/logo.html">here</a> and then came across some pretty good documentation along with some interactive examples <a href="http://www.bfoit.org/itp/Preface.html">here</a>. I also found this awesome <a href="https://logothings.wikispaces.com/">wiki</a> by Cynthia Solomon, one of the original developers of Logo - check out the footage of the BBC turtle in some of the Youtube clips. I&#39;d be fascinated to see some more original examples of the original BBC Turtle Logo as I&#39;m unsure exactly which features it supports. Turtle Logo seems to be a subset of Logo and from my research it looks like there are a few levels of commands which get increasingly complex:</p>
+
+<p>Basic commands:</p>
+
+<ul>
+<li><strong>FD</strong> <amount> - move forward by &lt;amount&gt; mm</li>
+<li><strong>BK</strong> <amount> - move backward by &lt;amount&gt; mm</li>
+<li><strong>RT</strong> <amount> - rotate clockwise by &lt;amount&gt; degrees</li>
+<li><strong>RT</strong> <amount> - rotate anti-clockwise by &lt;amount&gt; degrees</li>
+<li><strong>PU</strong> - move the pen up (i.e. stop drawing)</li>
+<li><strong>PU</strong> - move the pen down (i.e. start drawing)</li>
+</ul>
+
+<p>Iterative commands:</p>
+
+<ul>
+<li><strong>REPEAT &lt;count&gt; [&lt;commands&gt;]</strong> - repeats the commands within the brackets &lt;count&gt; times. The commands look like they each accept one argument only and can be just written after eachother, e.g. REPEAT 10 [FD 100 RT 30]</li>
+</ul>
+
+<p>Procedural commands:</p>
+
+<ul>
+<li><strong>TO</strong> - allows the user to define procedures and pass them arguments.</li>
+</ul>
+
+<p>My plan of action is to tackle the language in this order - I&#39;ve already got the basic commands working well (although they aren&#39;t calibrated yet). I think the REPEAT statement is a crucial part of the Turtle experience and is much easier to fit into the line oriented processing that I currently have working. At the moment I&#39;m taking the approach of processing each line as it comes in and performing the action that the command specified. To support adding functions at run time will be a nice interesting challenge, but one that should fit into the framework I&#39;ve developed quite well.</p>
+
+<p>I&#39;ve still got a few questions about Logo - it seems like there are quite a few variants so I&#39;m not sure what should be in scope for this project. If anyone can help with these qustions it would be much appreciated.</p>
+
+<ul>
+<li>Can a function have more than one argument?</li>
+<li>If so, when it is in a repeat statement, how does it look?</li>
+<li>Can repeat statements be on multiple lines?</li>
+</ul>
+
+<p>I&#39;m planning on turning this into a proper arduino library, but at the moment here&#39;s the arduino sketch that has everything in it. It&#39;s pretty straightforward (except the bit about passing function references) and there&#39;s some room for improvement, but it seems to be working well.</p>
+
+<script src="https://gist.github.com/913815.js"> </script>
+</p>
+  </div>
+</div>
+
+
+          <div id="footer">
+            <div class="inner">
+              <div class="footlinks">
+                <h3 class="logo">Mirobot</h3>
+                <ul>
+                  <li><a href="/blog/">About</a></li>
+                  <li><a href="/blog/">Blog</a></li>
+                  <li><a href="/about/">Build</a></li>
+                  <li><a href="/buy/">Buy</a></li>
+                  <li><a href="mailto:info@mirobot.io">info@mirobot.io</a></li>
+                </ul>
+              </div>
+              <div class="footlinks">
+                <h3>Build</h3>
+                <ul>
+                  <li><a href="/build/chassis/">Build the chassis</a></li>
+                  <li><a href="/build/pcb/">Solder the PCB</a></li>
+                  <li><a href="/build/connect/">Connect it all together</a></li>
+                  <!--li><a href="/build/using/">Start using Mirobot</a></li-->
+                  <li><a href="/build/firmware/">Build the firmware</a></li>
+                  <li><a href="/build/fabricate/">Make your own parts</a></li>
+                </ul>
+              </div>
+              <div class="footlinks">
+                <h3>Open Source</h3>
+                <ul>
+                  <li><a href="https://github.com/bjpirt/mirobot-chassis">Chassis designs</a></li>
+                  <li><a href="https://github.com/bjpirt/mirobot-pcb">PCB designs</a></li>
+                  <li><a href="https://github.com/bjpirt/mirobot-arduino">Arduino firmware</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

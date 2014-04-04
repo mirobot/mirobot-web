@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+{% css_asset_tag main %}
+- /_assets/css/syntax.css
+- /_assets/css/main.css
+{% endcss_asset_tag %}
+
+{% javascript_asset_tag main %}
+- /_assets/js/main.js
+{% endjavascript_asset_tag %}
+
+    </head>
+    <body>
+
+        <div id="main">
+          <div id="header">
+            <div class="inner">
+              <h1 class="title"><a href="/">Mirobot</a></h1>
+              <ul>
+                <li{% if page.url contains '/about/' %} class="selected"{% endif %}><a href="/about/">About</a></li>
+                <li{% if page.url contains '/blog/' %} class="selected"{% endif %}><a href="/blog/">Blog</a></li>
+                <li{% if page.url contains '/build/' %} class="selected"{% endif %}><a href="/build/">Build</a></li>
+                <li{% if page.url contains '/buy/' %} class="selected"{% endif %}><a href="/buy/" class="buy">Buy</a></li>
+              </ul>
+            </div>
+          </div>
+          {{ content }}
+          <div id="footer">
+            <div class="inner">
+              <div class="footlinks">
+                <h3 class="logo">Mirobot</h3>
+                <ul>
+                  <li><a href="/blog/">About</a></li>
+                  <li><a href="/blog/">Blog</a></li>
+                  <li><a href="/about/">Build</a></li>
+                  <li><a href="/buy/">Buy</a></li>
+                  <li><a href="mailto:info@mirobot.io">info@mirobot.io</a></li>
+                </ul>
+              </div>
+              <div class="footlinks">
+                <h3>Build</h3>
+                <ul>
+                  <li><a href="/build/chassis/">Build the chassis</a></li>
+                  <li><a href="/build/pcb/">Solder the PCB</a></li>
+                  <li><a href="/build/connect/">Connect it all together</a></li>
+                  <!--li><a href="/build/using/">Start using Mirobot</a></li-->
+                  <li><a href="/build/firmware/">Build the firmware</a></li>
+                  <li><a href="/build/fabricate/">Make your own parts</a></li>
+                </ul>
+              </div>
+              <div class="footlinks">
+                <h3>Open Source</h3>
+                <ul>
+                  <li><a href="https://github.com/bjpirt/mirobot-chassis">Chassis designs</a></li>
+                  <li><a href="https://github.com/bjpirt/mirobot-pcb">PCB designs</a></li>
+                  <li><a href="https://github.com/bjpirt/mirobot-arduino">Arduino firmware</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,4 @@
+*.swp
+*.DS_Store
+.bundle*
+s3_website.yml

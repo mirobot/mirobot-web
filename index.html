@@ -1,0 +1,95 @@
+---
+layout: default
+title: Mirobot
+paginator: 3
+---
+
+<div id="home">
+  <div id="intro" class="imgbox">
+    <div class="inner">
+      <h2 class="headline">Mirobot is a WiFi robot for</h2>
+      <h2 class="headline">helping children learn about</h2>
+      <h2 class="headline">technology and programming</h2>
+      <h2 class="headline alt">Mirobot is a WiFi robot for helping children learn about technology and programming</h2>
+      <a href="/buy/" class="more">Get Started ></a>
+    </div>
+  </div>
+
+  <section id="keypoints">
+    <div class="inner">
+      <a href="/open_source/">
+        <div class="infobox">
+          <div class="inner">
+            <h3>Open Source</h3>
+            <p>Mirobot is 100% open source, including:</p>
+            <ul>
+              <li>PCB designs and schematics</li>
+              <li>Firmware code</li>
+              <li>Chassis designs</li>
+            </ul>
+            <p>It's designed with learning in mind - take the files, learn how to build things and make your own!</p>
+          </div>
+          <a class="more" href="/open_source/">Find out more ></a>
+        </div>
+      </a>
+
+      <a href="/programmable/">
+        <div class="infobox">
+          <div class="inner">
+            <h3>Programmable</h3>
+            <p>There are lots of ways to program Mirobot:</p>
+            <ul>
+              <li>Easy visual programming language</li>
+              <li>In-browser Javascript</li>
+              <li>Directly with LOGO</li>
+              <li>Using the Arduino that's on board</li>
+            </ul>
+            <p></p>
+          </div>
+          <a class="more" href="/programmable/">Find out more ></a>
+        </div>
+      </a>
+
+      <a href="/build_yourself/">
+       <div class="infobox">
+          <div class="inner">
+            <h3>Build it Yourself</h3>
+            <p>Mirobot has been designed to be easily built from scratch</p>
+            <ul>
+              <li>Assemble the chassis</li>
+              <li>Solder the circuit board</li>
+              <li>Program the Arduino</li>
+            </ul>
+            <p>By building it yourself you build up more of an understanding of how it works</p>
+          </div>
+          <a class="more" href="/build_yourself/">Find out more ></a>
+        </div>
+      </div>
+      </a>
+  </section>
+
+  <section id="features" class="imgbox">
+  <div class="inner">
+    <ul>
+      <li>WiFi connected</li>
+      <li>Arduino-based</li>
+      <li>Easy to use</li>
+      <li>Drawing robot (turtle)</li>
+      <li>Accurate stepper motors</li>
+      <li>Battery powered</li>
+      <li>Hackable and extensible</li>
+      <li>Web programmable</li>
+      <li>100% Open source</li>
+    </ul>
+  </div>
+  </section>
+
+  <section id="blogPreview">
+    <div class="inner">
+      <h3>From the blog:</h3>
+      {% for post in site.posts limit:3 %}
+        <div class="blogPost infobox"><div class="inner"><h3><a href="{{ post.url }}">{{ post.title }}</a></h3><span class="date">{{ post.date | date_to_string }}</span><p>{{ post.content | truncatehtml:200, true }}</p></div><a href="{{ post.url }}" class="more">Read more ></a></div>
+      {% endfor %}
+    </div>
+  </section>
+</div>

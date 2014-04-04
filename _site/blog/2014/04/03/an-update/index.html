@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>An Update</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='/assets/main-207637ce173ffcb4c5404797136b2f44.css' rel='stylesheet' type='text/css' />
+
+
+<script src='/assets/main-0c335e38373658f1b9c86025230d3c02.js' type='text/javascript'></script>
+
+
+    </head>
+    <body>
+
+        <div id="main">
+          <div id="header">
+            <div class="inner">
+              <h1 class="title"><a href="/">Mirobot</a></h1>
+              <ul>
+                <li><a href="/about/">About</a></li>
+                <li class="selected"><a href="/blog/">Blog</a></li>
+                <li><a href="/build/">Build</a></li>
+                <li><a href="/buy/" class="buy">Buy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="blogpost">
+  <div class="inner">
+    <span class="date">03 Apr 2014</span>
+    <h2><a href="/blog/2014/04/03/an-update/">An Update</a></h2>
+    <p><p>I&#39;ve not blogged here for a little while, primarily because I&#39;ve had my head down preparing to launch Mirobot on Kickstarter. However, I&#39;ve still made some good progress in a few areas that I thought it would be worth updating on.</p>
+
+<p>I&#39;ve been experimenting with different chassis materials and have found some nice melamine faced MDF that I think looks good. The black edges contrast really well. It required a bit of cleaning but I&#39;m hoping that I can tweak the laser cutting process to reduce this. It&#39;s fine for small volumes, but if the Kickstarter is successful then I&#39;ll need to make sure this process is efficient.</p>
+
+<p><img src="/assets/update/white_mdf.jpg" alt="White MDF" title="White MDF"></p>
+
+<p>I also tried using acrylic but I don&#39;t think it looks as nice:</p>
+
+<p><img src="/assets/update/comparison.jpg" alt="Comparison" title="Comparison"></p>
+
+<p>I&#39;m using a new WiFi module (<a href="http://en.usr.cn/Tiny-size-low-power-uart-ttl-to-802.11b-g-n-low-price-wifi-module">this one</a>) which is smaller and easier to mount as it uses a pin header instead of surface mount. It needs an external antenna, but I&#39;d come to the conclusion that I was going to need one anyway because the signal was very weak. The reception is still not massively strong, but then for a module that&#39;s only drawing about 50mA that&#39;s to be expected.</p>
+
+<p>The Javascript web application used to control it is now embedded in the memory on the WiFi module. It&#39;s possible to replace the configuration pages on the module (in case you want to translate them or something) but I don&#39;t think they&#39;d considered how useful it is having an embedded webserver on your socket &lt;-&gt; serial converter. I&#39;ve written a WebSocket handler so now you load the web application up and then it communicates in real time over the WebSocket to send commands to the Arduino. This is working really well and makes it quite easy to talk to Mirobot from other scripts (I&#39;m looking forward to hooking it up to <a href="http://cylonjs.com/">Cylon.js</a>). I&#39;ve coded it so that the socket can be used in either raw socket mode or WebSocket mode depending on which you prefer.</p>
+
+<p>Now I&#39;ve built a version that looks good it&#39;s time to put that all important video together. I&#39;m going to be at <a href="http://www.makerfaireuk.com/">Maker Faire UK</a> at the end of April. Hopefully the Kickstarter will be launched by then. If you&#39;re going, then stop by and say hi.</p>
+</p>
+  </div>
+</div>
+
+
+          <div id="footer">
+            <div class="inner">
+              <div class="footlinks">
+                <h3 class="logo">Mirobot</h3>
+                <ul>
+                  <li><a href="/blog/">About</a></li>
+                  <li><a href="/blog/">Blog</a></li>
+                  <li><a href="/about/">Build</a></li>
+                  <li><a href="/buy/">Buy</a></li>
+                  <li><a href="mailto:info@mirobot.io">info@mirobot.io</a></li>
+                </ul>
+              </div>
+              <div class="footlinks">
+                <h3>Build</h3>
+                <ul>
+                  <li><a href="/build/chassis/">Build the chassis</a></li>
+                  <li><a href="/build/pcb/">Solder the PCB</a></li>
+                  <li><a href="/build/connect/">Connect it all together</a></li>
+                  <!--li><a href="/build/using/">Start using Mirobot</a></li-->
+                  <li><a href="/build/firmware/">Build the firmware</a></li>
+                  <li><a href="/build/fabricate/">Make your own parts</a></li>
+                </ul>
+              </div>
+              <div class="footlinks">
+                <h3>Open Source</h3>
+                <ul>
+                  <li><a href="https://github.com/bjpirt/mirobot-chassis">Chassis designs</a></li>
+                  <li><a href="https://github.com/bjpirt/mirobot-pcb">PCB designs</a></li>
+                  <li><a href="https://github.com/bjpirt/mirobot-arduino">Arduino firmware</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>
