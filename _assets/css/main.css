@@ -134,7 +134,7 @@ vertical-align:top;
 /* Home page
 /*******************************/
 #home #intro{
-  padding:130px 0 70px;
+  padding:30px 0 70px;
 }
 
 .imgbox{
@@ -192,7 +192,7 @@ h2.headline{
   text-align:center;
   margin:10px;
   padding:5px 20px;
-  background-color:#FFF;
+  background-color:rgba(255, 255, 255, 0.8);
   display:inline-block;
   line-height:150%;
   color:#000;
@@ -435,3 +435,24 @@ h2.alt{
 #mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
 
 #mc-embedded-subscribe {clear:both; width:auto; display:block; margin:1em 0 1em 5%;}
+
+
+#kickstarter{
+  text-align:center;
+  vertical-align:center;
+  border-top:10px solid #CCC;
+  border-bottom:10px solid #CCC;
+  background:#FFF;
+  padding:20px 0;
+  margin-bottom:20px;
+  -webkit-box-shadow: 0px 0px 34px 4px rgba(0,0,0,0.84);
+  -moz-box-shadow: 0px 0px 34px 4px rgba(0,0,0,0.84);
+  box-shadow: 0px 0px 34px 4px rgba(0,0,0,0.84);
+}
+#kickstarter a{
+  font-size:200%;
+  text-decoration:none;
+}
+#kickstarter img{
+  margin-bottom:-9px;
+}
