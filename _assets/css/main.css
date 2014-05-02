@@ -305,12 +305,24 @@ hr.clear{
   color: #CCC;
 }
 
-.blogpost ul, .pullout ul{
+.blogpost ul, .pullout ul, .release ul{
   padding:0 40px;
   overflow:hidden;
 }
-.blogpost ul li, .pullout ul li{
+.blogpost ul li, .pullout ul li, ,release ul li{
   margin:10px 0;
+}
+
+.release{
+  padding:10px 0;
+}
+.release h2{
+  font-size:170%;
+  margin:30px 0;
+}
+.release .inner{
+  max-width:700px;
+  padding-right:200px;
 }
 
 .text {

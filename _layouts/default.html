@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
+        <title>Mirobot - {{ page.title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 {% css_asset_tag main %}
 - /_assets/css/syntax.css
@@ -25,6 +25,7 @@
                 <li{% if page.url contains '/about/' %} class="selected"{% endif %}><a href="/about/">About</a></li>
                 <li{% if page.url contains '/blog/' %} class="selected"{% endif %}><a href="/blog/">Blog</a></li>
                 <li{% if page.url contains '/build/' %} class="selected"{% endif %}><a href="/build/">Build</a></li>
+                <li{% if page.url contains '/press/' %} class="selected"{% endif %}><a href="/press/">Press</a></li>
                 <li{% if page.url contains '/buy/' %} class="selected"{% endif %}><a href="/buy/" class="buy">Buy</a></li>
               </ul>
             </div>
