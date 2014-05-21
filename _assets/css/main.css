@@ -320,9 +320,9 @@ hr.clear{
   font-size:170%;
   margin:30px 0;
 }
-.release .inner{
-  max-width:700px;
-  padding-right:200px;
+.release .inner, .blogpost .inner{
+  max-width:720px;
+  padding:0 90px;
 }
 
 .text {
