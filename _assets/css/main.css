@@ -280,6 +280,9 @@ hr.clear{
 .pullout h3 a{
   text-decoration:none;
 }
+.pullout img{
+  margin-bottom:10px;
+}
 .subhead{
   font-size:200%;
 }

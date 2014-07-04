@@ -1,0 +1,201 @@
+---
+layout: default
+title: Build the PCB
+---
+
+<div id="chassis">
+  <section id="explanation" class="pullout subhead">
+    <div class="inner">
+      <p>Follow these instructions to assemble the Mirobot control board.</p>
+    </div>
+  </section>
+  
+  
+  <section class="pullout odd">
+    <div class="inner">
+      <img class="right" src="/assets/guide/pcb/beta/01.jpg" />
+      <h3>The parts</h3>
+      <p>Here are all of the parts that we are going to be soldering. In the centre is the PCB (Printed Circuit Board - make sure you have it this way up) and then clockwise from the top we have:</p>
+      <ul>
+        <li>Two stepper motor sockets (white)</li>
+        <li>The power socket</li>
+        <li>The resistors. These are labelled - 10k, 1k and the unlabelled one is 470 Ohm</li>
+        <li>The reset switch</li>
+        <li>Two power select jumpers</li>
+        <li>The 2x3 power select header pins</li>
+        <li>The 10 pin WiFi socket</li>
+        <li>The 3 pin (for the servo) and 6 pin (for the programming cable) header pins</li>
+        <li>The 3.3V voltage regulator</li>
+        <li>Two 22uF capacitors</li>
+        <li>Two 100nF capacitors</li>
+        <li>Two 100uF capacitors</li>
+        <li>The 5V voltage regulator</li>
+        <li>The crystal</li>
+        <li>Two stepper drivers and their sockets</li>
+        <li>The Atmega328 and its socket</li>
+        <li>The status LED</li>
+      </ul>
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout even">
+    <div class="inner">
+      <img src="/assets/guide/pcb/beta/03.jpg" class="left" />
+      <img src="/assets/guide/pcb/beta/02.jpg" class="left" />
+      <img src="/assets/guide/pcb/beta/02b.jpg" class="left" />
+      <h3>Step one</h3>
+      <p>Put the resistors into their holes (bend the wires like in the second picture), solder them in and then snip off the wires that are left sticking out the back of the board. There are three different resistor values and you need to make sure you put the right one in the right place. See the diagram for which is which and what they look like.</p>
+      <p>Pro-tip: if you bend the wires slightly to either side of the hole like in the third picture they won't fall out when you turn the PCB over.</p>
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout odd">
+    <div class="inner">
+        <img src="/assets/guide/pcb/beta/04.jpg" class="right" />
+      <h3>Step two</h3>
+      <p>Solder the crystal in place and remove the wire left over after you've soldered it.</p>
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout even">
+    <div class="inner">
+      <img class="left" src="/assets/guide/pcb/beta/05.jpg" />
+      <h3>Step three</h3>
+      <p>Solder the two capacitors in place either side of the crystal and trim their legs.</p>
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout odd">
+    <div class="inner">
+      <img class="right" src="/assets/guide/pcb/beta/06.jpg" />
+      <h3>Step four</h3>
+      <p>Solder the WiFi socket in place</p>
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout even">
+    <div class="inner">
+      <img class="left" src="/assets/guide/pcb/beta/07.jpg" />
+      <h3>Step five</h3>
+      <p>Solder the three chip sockets in place. Note that each one has a small notch on one end - this should line up with the white printing on the PCB and tells you which way the chip should be inserted. All notches on this board should be on the left side like in the photo.</p>
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout odd">
+    <div class="inner">
+      <img class="right" src="/assets/guide/pcb/beta/08.jpg" />
+      <h3>Step six</h3>
+      <p>Solder the stepper and power sockets in place. For the two 5 pin stepper motor sockets, you need to make sure that the side with two notches in it is on the inside of the board - check the photo. They should clip satisfyingly into place.</p>
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout even">
+    <div class="inner">
+      <img class="left" src="/assets/guide/pcb/beta/09.jpg" />
+      <h3>Step seven</h3>
+      <p>Solder the two blue capacitors in place then trim their legs on the back.</p>
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout odd">
+    <div class="inner">
+      <img class="right" src="/assets/guide/pcb/beta/10.jpg" />
+      <h3>Step eight</h3>
+      <p>Solder the LED in place. It's important to get this the right way round. The best way to do this is to make sure that the longer of the two legs is in the top hole (make sure the board is the same way around as the photo).</p>
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout even">
+    <div class="inner">
+      <img class="left" src="/assets/guide/pcb/beta/11.jpg" />
+      <h3>Step nine</h3>
+      <p>Solder the switch. It should clip nicely into place and doesn't need trimming.</p>
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout odd">
+    <div class="inner">
+      <img class="right" src="/assets/guide/pcb/beta/12.jpg" />
+      <h3>Step ten</h3>
+      <p>Add the voltage regulator for the WiFi module. You'll need to bend the middle leg back (away from the flat side) slightly to fit in the hole. Make sure you get it the right way round - look at the white shape on the PCB to make sure.</p>
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout even">
+    <div class="inner">
+      <img class="left" src="/assets/guide/pcb/beta/13.jpg" />
+      <h3>Step eleven</h3>
+      <p>Solder in the header pins. These should hold themselves in place to make it easier to solder. There is one 2x3 set of pins, one 1x6 set and one 1x3 set.</p>
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout odd">
+    <div class="inner">
+      <img class="right" src="/assets/guide/pcb/beta/14.jpg" />
+      <h3>Step twelve</h3>
+      <p>Put the jumpers on to the 2x3 header pins you just soldered on. Depending one which side they are placed they will let you power the robot from battery (left) or from USB (right). For normal operation they should go on the left two pins horizontally (check the photo).</p>
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout even">
+    <div class="inner">
+      <img class="left" src="/assets/guide/pcb/beta/15.jpg" />
+      <h3>Step thirteen</h3>
+      <p>Solder in the two larger, round capacitors and trim their legs. These need to be put in the right way round. The long leg of the capacitor should go into the bottom hole on the board that has the + symbol next to it. The white stripe on the capacitor should be facing towards the white socket for the stepper motor.</p>
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout odd">
+    <div class="inner">
+      <img class="right" src="/assets/guide/pcb/beta/16.jpg" />
+      <h3>Step fourteen</h3>
+      <p>Solder in the three legged voltage regulator and trim its legs. This also needs to go in the right way round. The flat metal side with the hole in it should be on the right hand side like in the picture.</p>
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout even">
+    <div class="inner">
+      <img class="left" src="/assets/guide/pcb/beta/17.jpg" />
+      <h3>Step fifteen</h3>
+      <p>Put the chips into their sockets. It is very important to make sure that the small notch on the end of the black body of the chip points matches up with the notch on the socket. In this picture they are all on the left side.</p>
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout odd">
+    <div class="inner">
+      <img class="right" src="/assets/guide/pcb/beta/18.jpg" />
+      <h3>Step sixteen</h3>
+      <p>Plug the WiFi module into the main board.</p>
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout even">
+    <div class="inner">
+      <h3>Next steps</h3>
+      <p>First, inspect your soldering. There should be no messy bits of solder bridging from the pins to other parts of the PCB. If there are, use the soldering iron to remove them. Then:</p>
+      <ul>
+      <li>Put 5 AA batteries into the battery pack and then plug it into the PCB.</li>
+      <li>The green light should flash for a few seconds and then go solid. If there is no green light, then check all of the components are in the right way round and there are no other mistakes.</li>
+      <li>If the green light is flashing, plug in the servo, making sure the colours on the cable match with the words on the board. This will align the servo to the up position, ready for building the chassis.</li>
+      <li>Now you should <a href="../chassis/">build the chassis</a></li>
+      <hr class="clear" />
+    </div>
+  </section>
+</div>
