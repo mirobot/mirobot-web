@@ -1,0 +1,137 @@
+---
+layout: default
+title: Build the PCB
+---
+
+<div id="chassis">
+  <section id="explanation" class="pullout subhead">
+    <div class="inner">
+      <p>Follow these instructions to assemble the Mirobot control board.</p>
+    </div>
+  </section>
+  
+  <section class="pullout even">
+    <div class="inner">
+      <img src="/assets/guide/pcb/earlybird/01.jpg" class="left" />
+      <h3>Unwrapping</h3>
+      <p>When you unwrap the package you should see a pink bag with the components in it, a white PCB and the black battery box.</p>
+      <p>Take these out and put the rest of the package to one side for now.</p>
+      <p>To assemble the PCB you will need:</p>
+      <ul>
+        <li>A soldering iron</li>
+        <li>Solder (60/40 tin/lead solder is the easiest to use. Lead free is harder)</li>
+      </ul>
+      <p>It is highly recommended to watch <a href="https://learn.adafruit.com/adafruit-guide-excellent-soldering/">this soldering tutorial</a> before starting if you're not used to soldering. Soldering isn't too difficult, but it's worth taking the time to make sure it's done well so it is more likely to work first time. </p>
+      <hr class="clear" />
+    </div>
+  </section>
+  
+  <section class="pullout odd">
+    <div class="inner">
+      <h3>The parts</h3>
+      <p>Here are all of the parts that are in the pink bag. At the bottom of the picture are the parts for assembling the chassis so put these back in the bag for now.</p>
+      <img src="/assets/guide/pcb/earlybird/02.jpg" />
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout even">
+    <div class="inner">
+      <img src="/assets/guide/pcb/earlybird/03.jpg" class="left" />
+      <h3>Step one</h3>
+      <p>Solder the WiFi socket in place.</p>
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout odd">
+    <div class="inner">
+        <img src="/assets/guide/pcb/earlybird/04.jpg" class="right" />
+      <h3>Step two</h3>
+      <p>Solder both of the chip sockets in to place. Take care to put the notch in the smaller one in line with the outline on the PCB. The larger one should have the notch on the top otherwise you won't be able to solder a later step.</p>
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout even">
+    <div class="inner">
+      <img class="left" src="/assets/guide/pcb/earlybird/05.jpg" />
+      <h3>Step three</h3>
+      <p>Solder the stepper sockets in place. You need to make sure that the side with two notches in it is at the edge of the board - check the photo. They should clip satisfyingly into place.</p>
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout odd">
+    <div class="inner">
+      <img class="right" src="/assets/guide/pcb/earlybird/06.jpg" />
+      <h3>Step four</h3>
+      <p>Solder the three servo connector pins. This should be inserted with the small end of the pins going through the PCB from the top down.</p>
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout even">
+    <div class="inner">
+      <img class="left" src="/assets/guide/pcb/earlybird/07.jpg" />
+      <h3>Step five</h3>
+      <p>Solder in the power switch.</p>
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout odd">
+    <div class="inner">
+      <img class="right" src="/assets/guide/pcb/earlybird/08.jpg" />
+      <h3>Step six (optional)</h3>
+      <p>Solder in the expansion pins. If you're not planning on using any expansion kits you don't need to do this, though it won't harm to put them in anyway and it's good practice soldering!</p>
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout even">
+    <div class="inner">
+      <h3>Step seven</h3>
+      <img class="right" src="/assets/guide/pcb/earlybird/09.jpg" />
+      <img class="right" src="/assets/guide/pcb/earlybird/10.jpg" />
+      <p>It's time to attach the battery holder. First, peel off the cover over the sticky pad on the battery holder. Then push the pins on the holder through the PCB from behind like in this picture. Once you've pushed it on so it sticks then you should carefuly solder it making sure you don't melt the Arduino socket.</p>
+      <hr class="clear" />
+    </div>
+  </div>
+
+  <section class="pullout odd">
+    <div class="inner">
+      <h3>Step eight</h3>
+      <img class="left" src="/assets/guide/pcb/earlybird/11.jpg" />
+      <p>Now we need to solder the pins on to the Arduino board we are using. The best way of doing this is to push both rows of pins into the Arduino socket as shown in this photo.</p>
+      <hr class="clear" />
+      <img class="left" src="/assets/guide/pcb/earlybird/12.jpg" />
+      <p>You can then put the Arduino onto these pins and solder them in. Doing it this way makes sure they are well aligned and will fit in and out nice and easily. The pins are quite small but take your time and it shouldn't be too tricky.</p>
+      <hr class="clear" />
+    </div>
+  </div>
+    
+  <section class="pullout even">
+    <div class="inner">
+      <img class="right" src="/assets/guide/pcb/earlybird/13.jpg" />
+      <h3>Step nine (optional)</h3>
+      <p>If you think you might want to reprogram the Arduino at some point in the future, you can solder on the programming pins as shown in the photo. You don't need these on in order to use Mirobot though.</p>
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout odd">
+    <div class="inner">
+      <h3>Next steps</h3>
+      <p>First, inspect your soldering. There should be no messy bits of solder bridging from the pins to other parts of the PCB. If there are, use the soldering iron to remove them. Then:</p>
+      <ul>
+      <li>Move the switch to the Off position.</li>
+      <li>Put 4 AA batteries into the battery pack.</li>
+      <li>Move the switch to the On position.</li>
+      <li>There should be two LEDs lit up on the Arduino. One should stay solid (the power LED) and one should flash for a few seconds before turning solid as well.</li>
+      <li>If the LED starts flashing then the board is OK and you should plug in the servo, making sure the colours on the cable match with the words on the board. This will align the servo to the up position, ready for building the chassis.</li>
+      <li>Now you should <a href="../chassis/">build the chassis</a></li>
+      <hr class="clear" />
+    </div>
+  </section>
+</div>
