@@ -1,0 +1,1 @@
+var has_remote_conn = true;
