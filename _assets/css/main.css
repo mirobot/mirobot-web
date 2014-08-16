@@ -311,6 +311,7 @@ hr.clear{
 .blogpost ul, .pullout ul, .release ul{
   padding:0 40px;
   overflow:hidden;
+  margin:1em 0;
 }
 .blogpost ul li, .pullout ul li, ,release ul li{
   margin:10px 0;
