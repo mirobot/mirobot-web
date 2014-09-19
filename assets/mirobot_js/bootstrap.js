@@ -1,5 +1,5 @@
 console.log('loading remote app');
-has_remote_conn = true;
+has_remote_conn = false;
 var mirobot;
 var latest_ui_version = undefined;
 var latest_ui_file = undefined;
@@ -62,7 +62,7 @@ var upgradeUI = function(){
     el('upgradeUI').style.display = 'block';
     el('upgradeUIContent').onclick = function(e){e.stopPropagation()};
     el('upgradeUI').onclick = function(){hideModal('upgradeUI')};
-  document.body.onkeyup = function(e){ escEvent(e, 'upgradeUI')};
+    document.body.onkeyup = function(e){ escEvent(e, 'upgradeUI')};
   }
 }
 
@@ -85,19 +85,18 @@ var getVersion = function(){
 
 var checkUIVersion = function(){
   if(has_remote_conn){
-    $.ajax("https://api.github.com/repos/bjpirt/mirobot-ui/releases", {
-      success: function(res){
-        if(res.length > 0){
-          latest_ui_version = res[0].tag_name;
-          if(res[0].assets.length > 0){
-            for(var i in res[0].assets){
-              if(res[0].assets[i].name === 'mirobot.bin'){
-                latest_ui_file = res[0].assets[i].browser_download_url;
-              }
+    snack.request({url: "https://api.github.com/repos/bjpirt/mirobot-ui/releases"}, function(err, res){
+      if(!err){
+        res = JSON.parse(res);
+        latest_ui_version = res[0].tag_name;
+        if(res[0].assets.length > 0){
+          for(var i in res[0].assets){
+            if(res[0].assets[i].name === 'mirobot.bin'){
+              latest_ui_file = res[0].assets[i].browser_download_url;
             }
           }
-          setVersions();
         }
+        setVersions();
       }
     });
   }
@@ -119,11 +118,11 @@ var initProgram = function(){
       if(mirobot_version === 'unknown'){
         window.setTimeout(getVersion, 1000);
       }
-      $(conn).html('&#10003; Connected to Mirobot');
-      $(conn).addClass('connected');
+      conn[0].innerHTML = '&#10003; Connected to Mirobot';
+      conn.addClass('connected');
     }else if(state === 'disconnected'){
-      $(conn).html('&#10007; Reconnecting to Mirobot');
-      $(conn).removeClass('connected');
+      conn[0].innerHTML = '&#10007; Reconnecting to Mirobot';
+      conn.removeClass('connected');
     }
   }
 
@@ -132,7 +131,8 @@ var initProgram = function(){
   mirobot.addListener(mirobotHandler);
 }
 
-LoadScripts(['jquery-custom-min.js', 'jquery-sortable.js', 'mirobot.js', 'builder.js'], '/', function(){
+LoadScripts(['snack.js', 'mirobot.js', 'builder.js', 'snack.sortableList.js'], remote_base, function(){
+  $ = snack.wrap;
   initProgram();
 });
 
