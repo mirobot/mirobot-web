@@ -34,7 +34,9 @@ p {
 margin: 1em 0;
 line-height:1.3em;
 }
-
+p.appendix{
+font-size:80%;
+}
 a         { color: #000; }
 a:hover   { color: #666; }
 a:visited { color: #000; }
