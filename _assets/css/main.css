@@ -158,6 +158,7 @@ vertical-align:top;
 #openSource .imgbox { background-image:url('/assets/bg4.jpg');}
 #programmable .imgbox { background-image:url('/assets/bg3.jpg');}
 #biy .imgbox { background-image:url('/assets/bg5.jpg');}
+#contactImg { background-image:url('/assets/bg5.jpg');}
 
 #intro .more{
   font-size: 200%;
