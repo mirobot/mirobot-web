@@ -1,0 +1,48 @@
+---
+layout: default
+title: Customise the firmware
+---
+
+<div id="chassis">
+
+  <section id="explanation" class="pullout subhead">
+    <div class="inner">
+      <p>Use the updater to get the latest code running on Mirobot.</p>
+    </div>
+  </section>
+  
+  <section class="pullout odd">
+    <div class="inner">
+      <h3>Download the app</h3>
+      <p>First, you'll need to download the updater application:</p>
+      <ul>
+        <li><a href="https://github.com/bjpirt/mirobot-updater/releases/download/v1.0.0/mirobot_updater_1.0.0_mac.zip">Mac Version</a></li>
+        <li><a href="https://github.com/bjpirt/mirobot-updater/releases/download/v1.0.0/mirobot_updater_1.0.0_win.zip">Windows Version</a></li>
+        <li>Linux Version (<a href="https://github.com/bjpirt/mirobot-updater/releases/download/v1.0.0/mirobot_updater_1.0.0_linux32.zip">32 bit</a>, <a href="https://github.com/bjpirt/mirobot-updater/releases/download/v1.0.0/mirobot_updater_1.0.0_linux64.zip">64 bit</a>) - tested on Ubuntu</li>
+      </ul>
+      <p>Unzip the folder and run the application</p>
+      <hr class="clear" />
+    </div>
+  </section>
+
+  <section class="pullout even">
+    <div class="inner">
+      <img class="left" src="/assets/firmware_update_pullout.png" />
+      <h3>Connect to Mirobot</h3>
+      <p>You'll need to know Mirobot's IP address in order to update it. If you're on the mirobot network, its IP address will be 10.10.100.254.</p>
+      <p>If you're updating over the mirobot network, make sure you start the application while you have a connection to the internet so that it can download the latest versions.</p>
+      <hr class="clear" />
+      <p>Enter the IP address and click connect. You should see the app update with the current versions (in green) or out of date versions (in red)</p>
+    </div>
+  </section>
+
+  <section class="pullout odd">
+    <div class="inner">
+      <h3>Update</h3>
+      <p>You can click the "Update" button next to the firmware you want to update.</p>
+      <p><em>Warning: there is always a risk when updating the Arduino over WiFi that the process will fail and leave it in a bad state</em>. If this happens, restart the updater application and keep trying to manually update the firmware until it succeeds. You will be prompted to press the reset button on the Arduino which will start the process. The best approach is not to update the Arduino unless you have a specific reason for doing so.</p>
+      <hr class="clear" />
+    </div>
+  </section>
+  
+</div>

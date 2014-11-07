@@ -13,7 +13,7 @@ title: Customise the firmware
   
   <section class="pullout even">
     <div class="inner">
-      <img class="left" src="/assets/guide/firmware/01.png" />
+      <img class="left" src="/assets/build/firmware/01.png" />
       <h3>Step one</h3>
       <p>Make sure you've got the Arduino IDE installed on your computer. If you haven't, <a href="http://arduino.cc/en/main/software">download it</a> and install it.</p>
       <hr class="clear" />
@@ -22,36 +22,32 @@ title: Customise the firmware
 
   <section class="pullout odd">
     <div class="inner">
-      <img class="right" src="/assets/guide/firmware/02.png" />
+      <img class="right" src="/assets/build/firmware/02.png" />
       <h3>Step two</h3>
-      <p>Install the libraries we need to be able to run the code. These can be downloaded from:</p>
-      <ul>
-        <li><a href="https://github.com/bjpirt/mirobot-arduino/releases/download/v1.0/Mirobot.zip">The Mirobot Arduino library</a></li>
-        <li><a href="https://github.com/bjpirt/HotStepper/releases/download/v1.0/HotStepper.zip">The HotStepper stepper motor library</a></li>
-        <li><a href="http://arduiniana.org/PWMServo/PWMServo_v2.zip">The PWMServo servo library</a></li>
+      <p>Install the Mirobot library we need to be able to run the code. First, you need to download<a href="https://github.com/bjpirt/mirobot-arduino/archive/master.zip">the latest version</a></p>
       </ul>
-      <p>Once you have downloaded them, they need installing. Go to the menu <em>Sketch >> Import Library >> Add Library</em> and when prompted select the zip file you just downloaded</p>
-      <p>You can tell that they are installed properly because when you go to <em>Sketch >> Import Library</em> again they will be listed</p>
-      <p>If you are having problems installing them, <a href="http://arduino.cc/en/Guide/Libraries">see here for more details</a></p>
+      <p>Unzip the file you just downloaded and rename the folder to "Mirobot". Then go to the menu <em>Sketch >> Import Library >> Add Library</em> and when prompted select the folder you just renamed.</p>
+      <p>You can tell it is installed properly because when you go to <em>Sketch >> Import Library</em> again it will be listed</p>
+      <p>If you are having problems installing the library, <a href="http://arduino.cc/en/Guide/Libraries">see here for more details</a></p>
       <hr class="clear" />
     </div>
   </section>
 
   <section class="pullout even">
     <div class="inner">
-      <img class="left" src="/assets/guide/firmware/03.png" />
+      <img class="left" src="/assets/build/firmware/03.png" />
       <h3>Step three</h3>
-      <p>In your <em>File >> Examples</em> menu, you should have a menu item for Mirobot (if you haven't, then the library is not installed properly). Select "socket_example" and it should open up a short sketch in the Arduino IDE.</p>
+      <p>In your <em>File >> Examples</em> menu, you should have a menu item for Mirobot (if you haven't, then the library is not installed properly). Select "firmware" and it should open up a short sketch in the Arduino IDE.</p>
       <hr class="clear" />
     </div>
   </section>
 
   <section class="pullout odd">
     <div class="inner">
-      <img class="right" src="/assets/guide/firmware/04.png" />
+      <img class="right" src="/assets/build/firmware/04.png" />
       <h3>Step four</h3>
       <p>Remove the WiFi module during programming</p>
-      <p>Plug Mirobot into your computer using a USB <-> Serial adapter.</p>
+      <p>Plug the Arduino into your computer using a USB <-> Serial adapter.</p>
       <p>Select the port from the <em>Tools >> Serial Port</em> menu</p>
       <p>Select "Arduino Pro or Pro Mini (3.3V, 8MHz) w/ ATmega328" from the <em>Tools >> Board</em> menu</p>
       <p>Click on the upload icon or choose <em>File >> Upload</em> from the menu. You should see a success message saying that the firmware has been successfully compiled and uploaded to Mirobot</p>
