@@ -26,4 +26,4 @@ The battery boxes that come with Mirobot have long leads that need trimming down
 
 I've found that if you can eliminate as much thought from the process as possible then hopefully mistakes will be less likely to happen. I'm really pleased I didn't just farm out the whole process to a third party - I've learned so much from actually managing this for myself that it makes development in the future a lot easier.
 
-I'll be updating shortly on the plans for the future, but right now I've got lots of stock ready to ship out for Christmas, so [hit the store](http://store.mirobot.io)!
+I'll be updating shortly on the plans for the future, but right now I've got lots of stock ready to ship out for Christmas, so [hit the store](http://shop.mirobot.io)!
