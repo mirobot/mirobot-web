@@ -289,8 +289,9 @@ hr.clear{
 .subhead{
   font-size:200%;
 }
-.odd{ background:#FCFCFC; }
-.even{ background:#FFF; }
+
+.pullout:nth-child(even){ background:#FCFCFC; }
+.pullout:nth-child(odd){ background:#FFF; }
 
 .blogpost{
   padding: 30px 0;
