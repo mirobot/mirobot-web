@@ -1,0 +1,104 @@
+---
+layout: default
+title: Troubleshooting
+---
+
+<div id="troubleshooting">
+  <section id="explanation" class="pullout subhead">
+    <div class="inner">
+      <p>Mirobot not working? See if these tips will help.</p>
+    </div>
+  </section>
+
+  <section id="javascript" class="pullout">
+    <div class="inner">
+      <h3>Having issues with the chassis?</h3>
+      <p><a href="#chassis1">The wheels turn but get stuck</a></p>
+      <p><a href="#chassis2">The pen arm is stuck</a></p>
+      <p><a href="#chassis3">The antenna mount is broken</a></p>
+      <h3>Having issues making it work?</h3>
+      <p><a href="#working1">The wheels don't move at all but the servo goes up and down</a></p>
+      <p><a href="#working2">Whenever I try to make it move the LED starts flashing</a></p>
+      <p><a href="#working3">The web page won't load</a></p>
+      <p><a href="#working4">The web page can't connect to Mirobot</a></p>
+      <h3>Having issues updating the firmware?</h3>
+      <p><a href="#firmware1">I tried to update the Arduino firmware and now it's broken</a></p>
+      <p><a href="#firmware2">I tried to update the UI and now it's broken</a></p>
+      <h3>Having issues with the addons?</h3>
+      <p><a href="#addons1">I can't get it to follow a line</a></p>
+    </div>
+  </section>
+
+  <section class="pullout">
+    <div class="inner" id="chassis1">
+      <h4>The wheels turn but get stuck</h4>
+      <p>If one of the wheels is getting stuck on the chassis, first try to take off the wheel cover and see if that stops it catching. If it does then it might be that the wheel is not on quite straight, in which case look down the wheel and see if it needs aligning. If it is still catching, then take the wheel off the motor and make sure the motor can turn fully. If it can't it might be faulty and need replacing.</p>
+    </div>
+  </section>
+
+  <section class="pullout">
+    <div class="inner" id="chassis2">
+      <h4>The pen arm is stuck</h4>
+      <p>Sometimes the MDF can swell slightly if it is in a humid or damp environment. If this happens, the arms can stick in the slots. The quickest fix for this is to lightly sand the arm on the uncoated MDF side with some fine sandpaper until it moves smoothly again.</p>
+    </div>
+  </section>
+
+  <section class="pullout">
+    <div class="inner" id="chassis3">
+      <h4>The antenna mount is broken</h4>
+      <p>The antenna mount can be a little fragile, as the instructions say. If you have damaged it during assembly then most of the time it won't affect performance, but if it comes too loose you can use a little glue to stick it back together again (that's the joy of using MDF!).</p>
+    </div>
+  </section>
+
+  <section class="pullout">
+    <div class="inner" id="working1">
+      <h4>The wheels don't move at all but the servo goes up and down</h4>
+      <p>If this happens it's normally because the stepper driver chip has been put in the wrong way round. The small notch on the end of the chip should be on the side that's towards the centre of the board. If in doubt, check <a href="../chassis/">the instructions</a>.</p>
+    </div>
+  </section>
+
+  <section class="pullout">
+    <div class="inner" id="working2">
+      <h4>Whenever I try to make it move the LED starts flashing</h4>
+      <p>This means that the voltage is dropping too low and the WiFi module is resetting and is usually just because the batteries are running down. Replace the batteries and try again.</p>
+    </div>
+  </section>
+
+  <section class="pullout">
+    <div class="inner" id="working3">
+      <h4>The web page won't load</h4>
+      <p>Make sure that the second red LED on the Arduino stops flashing before trying to join the network. Once it has stopped flashing then it means the WiFi module is ready and should be working fine. If it doesn't stop flashing, this normally indicates a problem with the soldering.</p>
+    </div>
+  </section>
+
+  <section class="pullout">
+    <div class="inner" id="working4">
+      <h4>The web page can't connect to Mirobot</h4>
+      <p>This means that the WiFI module is working but can't communicate with the Arduino. The normal cause of this is faulty soldering on the Arduino itself so take a magnifying glass and make sure all of the pins are well soldered with no small pieces bridging two of the pins.</p>
+    </div>
+  </section>
+
+  <section class="pullout">
+    <div class="inner" id="firmware1">
+      <h4>I tried to update the Arduino firmware and now it's broken</h4>
+      <p>You can keep trying to update the firmware using the updater and pressing the reset button on the Arduino manually until it succeeds. If this doesn't work, then you can use a USB to serial converter to connect to the Arduino and reprogram it using that. See these <a href="../firmware/">instructions</a> for more details.</p>
+    </div>
+  </section>
+
+  <section class="pullout">
+    <div class="inner" id="firmware2">
+      <h4>I tried to update the UI and now it's broken</h4>
+      <p>If the UI update fails, then you can keep trying to update using the updater until it succeeds. Alternatively, if this is not working you can visit <a href="http://10.10.100.254/iweb.html">the firmware update page</a> on the module and use the second input to upload the latest file from <a href="http://github.com/bjpirt/mirobot-ui/releases">github</a>. This seems to work best from a PC using Internet Explorer, but trying other browsers won't harm the module.</p>
+    </div>
+  </section>
+
+  <section class="pullout">
+    <div class="inner" id="addons1">
+      <h4>I can't get it to follow a line</h4>
+      <p>First double-check that you've got the LEDs the right way round (look for the flat side) and the resistors in the right place (R1 should have a black line on it, R2 & R3 should have mostly red). Next make sure the cable is plugged in the right way round</p>
+      <p>Draw a black line around 1cm thick on a white background and place the LEDs on either side of it, then click "start line following" in the UI and it should start following.</p>
+      <p>It will work best in a room with less sunlight as you'll get more contrast from the IR LEDs</p>
+    </div>
+  </section>
+
+</div>
