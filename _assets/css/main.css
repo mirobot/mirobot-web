@@ -156,6 +156,7 @@ vertical-align:top;
 #about .imgbox { background-image:url('/assets/bg/about.jpg');}
 #build .imgbox { background-image:url('/assets/bg/build.jpg');}
 #contactImg { background-image:url('/assets/bg/contact.jpg');}
+#schools .imgbox{ background-image:url('/assets/bg/home2.jpg');}
 
 #intro .more{
   font-size: 200%;
@@ -396,6 +397,18 @@ h2.alt{
   }
 }
 
+@media all and (max-width: 810px) {
+  #header ul {
+    float:none;
+    display:block;
+    margin-top:0;
+  }
+  #header ul li {
+    margin-right:15px;
+  }
+}
+
+
 @media all and (max-width: 640px) {
   h2.headline{
     font-size: 150%;
@@ -404,14 +417,6 @@ h2.alt{
     font-size: 120%;
     margin:20px auto 0;
     width:170px;
-  }
-  #header ul {
-    float:none;
-    display:block;
-    margin-top:0;
-  }
-  #header ul li {
-    margin-right:15px;
   }
   .imgbox li{
     padding:7px;
