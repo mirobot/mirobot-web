@@ -1,6 +1,8 @@
 Mirobot.io
 ==========
 
+[![Build Status](https://travis-ci.org/bjpirt/mirobot-web.svg?branch=master)](https://travis-ci.org/bjpirt/mirobot-web)
+
 This is the http://mirobot.io Jekyll web site.
 
 To build:
