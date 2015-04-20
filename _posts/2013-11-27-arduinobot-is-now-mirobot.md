@@ -20,4 +20,4 @@ Since I left Xively I've been dedicating several days a week to completing the f
  
 The aims of the project are unchanged; create a low cost, fully open source drawing robot that can be used to teach children about technology and programming.
 
-There are lots of plans for building the supporting parts of the project like the documentation and instructions as well as a web site where people can learn, but more about those in the future. I'm going to be selling Mirobots as kits to try and get lots out into the world. [Sign up to the mailing list](/sign_up) if you'd like to be notified when they are available.
+There are lots of plans for building the supporting parts of the project like the documentation and instructions as well as a web site where people can learn, but more about those in the future. I'm going to be selling Mirobots as kits to try and get lots out into the world. [Sign up to the mailing list](/signup) if you'd like to be notified when they are available.
