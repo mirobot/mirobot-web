@@ -5,7 +5,7 @@ date: 2014/02/03
 layout: post
 ---
 
-![Open Hardware](/assets/open-source-pcb/header.png "Open Hardware")
+![Open Hardware](/assets/blog/open-source-pcb/header.png "Open Hardware")
 
 In the previous post I open sourced the chassis designs and this time it's the turn of the PCB.
 

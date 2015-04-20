@@ -7,7 +7,7 @@ layout: post
 
 The main reason I started designing Mirobot was to be able to build it with my kids so Christmas seemed like the perfect opportunity to do this.
 
-![The kids with their robots](/assets/milestone/kids.jpg "The kids with their robots")
+![The kids with their robots](/assets/blog/milestone/kids.jpg "The kids with their robots")
 
 The things you learn from doing real user testing are fantastic. They both assembled the chassis and managed to solder the circuit board mostly by themselves. Obviously there was a lot of adult supervision but they both seemed to really enjoy the process of actually building something for Christmas, not just getting it out of a box. The easier it is to build, the more likely people are to use it and recommend it to others, so I'll be designing out some of the points of friction I we came across to make it easier to build. Audrey is keen to do some more soldering on the next version. The learning points were:
 

@@ -7,7 +7,7 @@ layout: post
 
 It's been a fascinating few weeks after launching Mirobot on [Kickstarter](https://www.kickstarter.com/projects/bjpirt/mirobot-the-diy-wifi-robot-for-children). It's an amazing way of getting a project off the ground and I've had a very positive experience so far. I've been genuinely touched by the belief and generosity my backers have shown. I thought a post on my learnings might help others on their own kickstarting journey because it's a very worthwhile experience so long as you do things properly.
 
-![Kickstarter](/assets/kickstarter/screenshot.jpg "Kickstarter Screenshot")
+![Kickstarter](/assets/blog/kickstarter/screenshot.jpg "Kickstarter Screenshot")
 
 1. Network
 ==========

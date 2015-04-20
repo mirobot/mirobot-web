@@ -7,7 +7,7 @@ layout: post
 
 One of the design goals of Mirobot is that it should be the starting point for learning more about technology, not the end point. The built-in user interface is really just designed for making a simple start with getting to use Mirobot and it's always been my intention to make other ways of using Mirobot. Today I'm launching Mirobot Apps, which is an online repository for apps to use with your Mirobot.
 
-![Apps](/assets/apps/apps.png "Apps")
+![Apps](/assets/blog/apps/apps.png "Apps")
 
 All you need to do is get your Mirobot on your network, then enter its address to start using them. I'll be integrating the apps more fully with the built-in application shortly so you can just click straight through. There are currently four apps, but there are a couple of really nice things about having apps online like this; it makes it really easy for me to push out new apps as and when I think of them and it also means that as the community make apps they can be put here too. There are currently four apps;
 

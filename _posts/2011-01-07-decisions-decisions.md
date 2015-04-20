@@ -19,15 +19,15 @@ So far I've been thinking that I'll laser-cut a chassis design from some ply whi
 
 The tricky decision to make at this point is to do with which motors to choose. I think I have a few options;
 
-![Geared motor](/assets/geared_motor.jpg "Geared motor")
+![Geared motor](/assets/blog/decisions/geared_motor.jpg "Geared motor")
 
 [A low(ish) cost DC geared motor, direct-drive](http://www.solarbotics.com/products/gm3/)
 
-![Stepper motor](/assets/large_stepper.jpg "Stepper motor")
+![Stepper motor](/assets/blog/decisions/large_stepper.jpg "Stepper motor")
 
 [A good quality stepper motor with a good, fine-grained, 1.8&deg; step angle, direct-drive](http://www.skpang.co.uk/catalog/product_info.php?products_id=673)
 
-![Small stepper motor](/assets/small_stepper.jpg "Small stepper motor")
+![Small stepper motor](/assets/blog/decisions/small_stepper.jpg "Small stepper motor")
 
 [A lesser quality stepper motor with a coarser 7.5&deg; angle, geared drive](http://www.adafruit.com/index.php?main_page=product_info&products_id=168)
 

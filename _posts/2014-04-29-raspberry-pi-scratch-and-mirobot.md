@@ -7,7 +7,7 @@ layout: post
 
 One of the things that people asked me during the fantastic [Maker Faire UK](http://www.makerfaireuk.com/) last weekend was whether Mirobot would work with Scratch and the Raspberry Pi. This is hugely appealing for many reasons, but one that particularly appeals to me is the similarity to the early days of computing in schools. I've always said that one of the big influences for Mirobot was the BBC Turtle, which worked with the BBC Micro computer.
 
-![Old and new](/assets/scratch/bbc.jpg "Old and new")
+![Old and new](/assets/blog/scratch/bbc.jpg "Old and new")
 
 _Educational robotics, old and new_
 
@@ -24,8 +24,8 @@ Building integrations like this with Scratch is made relatively tricky because S
 
 I used a trick in Scratch to make it wait until the command had completed before sending the next:
 
-![Scratch screenshot](/assets/scratch/screenshot.png "Scratch screenshot")
+![Scratch screenshot](/assets/blog/scratch/screenshot.png "Scratch screenshot")
  
-If you're interested, you can also check out [the full Scratch program](/assets/scratch/program.png "Scratch program") I ran in the video.
+If you're interested, you can also check out [the full Scratch program](/assets/blog/scratch/program.png "Scratch program") I ran in the video.
 
 I'd love to make this a bit slicker, but to do that I'd have to create custom blocks which means forking Scratch. It's sad that Scratch v2.0 won't run on the Raspberry Pi because the next version can be extended more easily. I think I'll write an add-on for [Snap!](http://snap.berkeley.edu/) which is a well-supported fork of Scratch that supports add-ons like this. It runs in the browser too, so it might make a great default interface for controlling Mirobot in any case.

@@ -8,7 +8,7 @@ layout: post
 After a fantastic visit to the London Science Museum, and seeing the original Turtle robot, I was filled with nostalgia for little robots that can draw. As the son of a teacher I was fortunate because during the school holidays lots of technology got brought home to play with. One of my favourite things was the BBC Turtle robot.
 ~
 
-![BBC Turtle Robot](/assets/turtle.jpg "The BBC Turtle Robot")
+![BBC Turtle Robot](/assets/blog/building/turtle.jpg "The BBC Turtle Robot")
 
 *Image copyright paulsilver @ flickr*
 
