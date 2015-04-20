@@ -157,6 +157,9 @@ vertical-align:top;
 #build .imgbox { background-image:url('/assets/bg/build.jpg');}
 #contactImg { background-image:url('/assets/bg/contact.jpg');}
 #schools .imgbox{ background-image:url('/assets/bg/home2.jpg');}
+#openSource .imgbox { background-image:url('/assets/bg/home1.jpg');}
+#programmable .imgbox { background-image:url('/assets/bg/home1.jpg');}
+#biy .imgbox { background-image:url('/assets/bg/home1.jpg');}
 
 #intro .more{
   font-size: 200%;
