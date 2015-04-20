@@ -151,14 +151,14 @@ vertical-align:top;
   padding:130px 0;
 }
 
-#intro{    background-image:url('/assets/bg7.jpg');}
-#features{ background-image:url('/assets/bg2.jpg');}
-#about .imgbox { background-image:url('/assets/bg1.jpg');}
-#build .imgbox { background-image:url('/assets/bg6.jpg');}
-#openSource .imgbox { background-image:url('/assets/bg4.jpg');}
-#programmable .imgbox { background-image:url('/assets/bg3.jpg');}
-#biy .imgbox { background-image:url('/assets/bg5.jpg');}
-#contactImg { background-image:url('/assets/bg5.jpg');}
+#intro{    background-image:url('/assets/bg/7.jpg');}
+#features{ background-image:url('/assets/bg/2.jpg');}
+#about .imgbox { background-image:url('/assets/bg/1.jpg');}
+#build .imgbox { background-image:url('/assets/bg/6.jpg');}
+#openSource .imgbox { background-image:url('/assets/bg/4.jpg');}
+#programmable .imgbox { background-image:url('/assets/bg/3.jpg');}
+#biy .imgbox { background-image:url('/assets/bg/5.jpg');}
+#contactImg { background-image:url('/assets/bg/5.jpg');}
 
 #intro .more{
   font-size: 200%;
