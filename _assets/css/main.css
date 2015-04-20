@@ -223,7 +223,7 @@ h2.headline{
   font-size:180%;
 }
 
-a.more {
+.more, a.more {
   font-family: 'second_chances';
   font-size: 140%;
   color:#FFF;
@@ -240,7 +240,7 @@ a.more {
   box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
-a.more:hover{
+.more:hover{
   background-color:#F44719;
 }
 
@@ -474,6 +474,12 @@ h2.alt{
 #kickstarter a{
   font-size:200%;
   text-decoration:none;
+}
+#kickstarter .more{
+  display:inline;
+  font-size:75%;
+  margin-left:20px;
+  border-bottom:10px solid white;
 }
 #kickstarter img{
   margin-bottom:-9px;
