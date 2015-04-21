@@ -19,14 +19,18 @@
             <div class="inner">
               <h1 class="title"><a href="/">Mirobot</a></h1>
               <ul>
+                <li{% if page.url contains '/schools/' %} class="selected"{% endif %}><a href="/schools/">Schools</a></li>
+                <li{% if page.url contains '/build/' %} class="selected"{% endif %}><a href="/build/">Build</a></li>
                 <li{% if page.url contains '/about/' %} class="selected"{% endif %}><a href="/about/">About</a></li>
                 <li{% if page.url contains '/blog/' %} class="selected"{% endif %}><a href="/blog/">Blog</a></li>
-                <li{% if page.url contains '/build/' %} class="selected"{% endif %}><a href="/build/">Build</a></li>
                 <li{% if page.url contains '/contact/' %} class="selected"{% endif %}><a href="/contact/">Contact</a></li>
                 <li><a href="http://shop.mirobot.io/" class="buy">Buy</a></li>
               </ul>
             </div>
           </div>
+          <section id="kickstarter" class="small">
+              <a href="http://kickstarter.com/projects/bjpirt/mirobot-the-launch-of-the-wifi-robotics-kit-for-ch">Mirobot is now on <img src="/assets/kickstarter_sm.png"><span class="more">Back it now ></span></a>
+          </section>
           {{ content }}
           <div id="footer">
             <div class="inner">

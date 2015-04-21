@@ -151,14 +151,15 @@ vertical-align:top;
   padding:130px 0;
 }
 
-#intro{    background-image:url('/assets/bg/7.jpg');}
-#features{ background-image:url('/assets/bg/2.jpg');}
-#about .imgbox { background-image:url('/assets/bg/1.jpg');}
-#build .imgbox { background-image:url('/assets/bg/6.jpg');}
-#openSource .imgbox { background-image:url('/assets/bg/4.jpg');}
-#programmable .imgbox { background-image:url('/assets/bg/3.jpg');}
-#biy .imgbox { background-image:url('/assets/bg/5.jpg');}
-#contactImg { background-image:url('/assets/bg/5.jpg');}
+#intro{    background-image:url('/assets/bg/home1.jpg');}
+#features{ background-image:url('/assets/bg/home2.jpg');}
+#about .imgbox { background-image:url('/assets/bg/about.jpg');}
+#build .imgbox { background-image:url('/assets/bg/build.jpg');}
+#contactImg { background-image:url('/assets/bg/contact.jpg');}
+#schools .imgbox{ background-image:url('/assets/bg/home2.jpg');}
+#openSource .imgbox { background-image:url('/assets/bg/home1.jpg');}
+#programmable .imgbox { background-image:url('/assets/bg/home1.jpg');}
+#biy .imgbox { background-image:url('/assets/bg/home1.jpg');}
 
 #intro .more{
   font-size: 200%;
@@ -225,7 +226,7 @@ h2.headline{
   font-size:180%;
 }
 
-a.more {
+.more, a.more {
   font-family: 'second_chances';
   font-size: 140%;
   color:#FFF;
@@ -242,7 +243,7 @@ a.more {
   box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
-a.more:hover{
+.more:hover{
   background-color:#F44719;
 }
 
@@ -399,6 +400,18 @@ h2.alt{
   }
 }
 
+@media all and (max-width: 810px) {
+  #header ul {
+    float:none;
+    display:block;
+    margin-top:0;
+  }
+  #header ul li {
+    margin-right:15px;
+  }
+}
+
+
 @media all and (max-width: 640px) {
   h2.headline{
     font-size: 150%;
@@ -407,14 +420,6 @@ h2.alt{
     font-size: 120%;
     margin:20px auto 0;
     width:170px;
-  }
-  #header ul {
-    float:none;
-    display:block;
-    margin-top:0;
-  }
-  #header ul li {
-    margin-right:15px;
   }
   .imgbox li{
     padding:7px;
@@ -455,3 +460,42 @@ h2.alt{
 #mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
 
 #mc-embedded-subscribe {clear:both; width:auto; display:block; margin:1em 0 1em 5%;}
+
+
+#kickstarter{
+  text-align:center;
+  vertical-align:center;
+  border-top:10px solid #CCC;
+  border-bottom:10px solid #CCC;
+  background:#FFF;
+  padding:20px 0;
+  margin-bottom:20px;
+  -webkit-box-shadow: 0px 0px 34px 4px rgba(0,0,0,0.84);
+  -moz-box-shadow: 0px 0px 34px 4px rgba(0,0,0,0.84);
+  box-shadow: 0px 0px 34px 4px rgba(0,0,0,0.84);
+}
+#kickstarter a{
+  font-size:200%;
+  text-decoration:none;
+}
+#kickstarter .more{
+  display:inline;
+  font-size:75%;
+  margin-left:20px;
+}
+#kickstarter img{
+  margin-bottom:-9px;
+}
+
+#kickstarter.small{
+  border:5px 0;
+  padding:7px 0;
+  margin-bottom:0;
+  font-size:60%;
+  -webkit-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.35);
+  -moz-box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.35);
+  box-shadow: 0px 0px 6px 2px rgba(0,0,0,0.35);
+}
+#kickstarter.small img{
+  margin-bottom:-5px;
+}
