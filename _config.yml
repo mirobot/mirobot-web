@@ -10,3 +10,4 @@ exclude:
  - s3_website.yml
  - README.md
  - vendor
+ - bin
