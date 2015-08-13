@@ -294,6 +294,10 @@ hr.clear{
 .pullout:nth-child(even){ background:#FCFCFC; }
 .pullout:nth-child(odd){ background:#FFF; }
 
+#blogs img, .blogpost img{
+  max-width:100%;
+}
+
 .blogpost{
   padding: 30px 0;
 }
