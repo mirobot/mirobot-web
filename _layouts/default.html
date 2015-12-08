@@ -24,7 +24,7 @@
                 <li{% if page.url contains '/about/' %} class="selected"{% endif %}><a href="/about/">About</a></li>
                 <li{% if page.url contains '/blog/' %} class="selected"{% endif %}><a href="/blog/">Blog</a></li>
                 <li{% if page.url contains '/contact/' %} class="selected"{% endif %}><a href="/contact/">Contact</a></li>
-                <li><a href="http://shop.mirobot.io/" class="buy">Buy</a></li>
+                <li{% if page.url contains '/buy/' %} class="selected"{% endif %}><a href="/buy/" class="buy">Buy</a></li>
               </ul>
             </div>
           </div>

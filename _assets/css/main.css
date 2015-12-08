@@ -275,11 +275,15 @@ hr.clear{
   padding:30px 0;
   font-size:120%;
 }
-.pullout p, .pullout h3{
+.pullout p, .pullout h3, .pullout h4{
   margin:5px;
 }
 .pullout h3{
   font-size:110%;
+}
+.pullout h4{
+  font-size:100%;
+  margin-top:10px;
 }
 .pullout h3 a{
   text-decoration:none;
