@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Mirobot - the DIY WiFi robotics kit for children :: {{ page.title }}</title>
+        <title>Mirobot - the DIY WiFi robotics kit for children{% if page.title != 'Home' %} :: {{ page.title }}{% endif %}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Mirobot is a build-it-yourself WiFi robotics kit for teaching children about technology, engineering and programming">
 {% css_asset_tag main %}
@@ -13,7 +13,6 @@
 
     </head>
     <body>
-
         <div id="main">
           <div id="header">
             <div class="inner">
