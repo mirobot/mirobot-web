@@ -89,14 +89,16 @@ chosen link or button. -->
 </div>
 </section>
 <script type="text/javascript">
-  var buylinks = document.querySelectorAll('a.buylink');
-  for(i=0; i< buylinks.length; i++){
-    var link = buylinks[i];
-    link.onclick = (function(link){
-      return function(){
-        goog_report_conversion(link.href);
-        return false;
-      }
-    })(link)
+  if(window['google_trackConversion']){
+    var buylinks = document.querySelectorAll('a.buylink');
+    for(i=0; i< buylinks.length; i++){
+      var link = buylinks[i];
+      link.onclick = (function(link){
+        return function(){
+          goog_report_conversion(link.href);
+          return false;
+        }
+      })(link)
+    }
   }
 </script>
