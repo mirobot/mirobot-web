@@ -6,10 +6,17 @@
         <title>Mirobot - the DIY WiFi robotics kit for children{% if page.title != 'Home' %} :: {{ page.title }}{% endif %}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Mirobot is a build-it-yourself WiFi robotics kit for teaching children about technology, engineering and programming">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+{% javascript_asset_tag main %}
+- /_assets/js/slideshow.js
+{% endjavascript_asset_tag %}
+
 {% css_asset_tag main %}
 - /_assets/css/syntax.css
-- /_assets/css/main.css
+- /_assets/css/main.scss
 {% endcss_asset_tag %}
+
       <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -21,32 +28,61 @@ ga('send', 'pageview');
     </head>
     <body>
         <div id="main">
-          <div id="header">
-            <div class="inner">
-              <h1 class="title"><a href="/">Mirobot</a></h1>
-              <ul>
-                <li{% if page.url contains '/schools/' %} class="selected"{% endif %}><a href="/schools/">Schools</a></li>
-                <li{% if page.url contains '/build/' %} class="selected"{% endif %}><a href="/build/">Build</a></li>
-                <li{% if page.url contains '/about/' %} class="selected"{% endif %}><a href="/about/">About</a></li>
-                <li{% if page.url contains '/blog/' %} class="selected"{% endif %}><a href="/blog/">Blog</a></li>
-                <li{% if page.url contains '/contact/' %} class="selected"{% endif %}><a href="/contact/">Contact</a></li>
-                <li{% if page.url contains '/buy/' %} class="selected"{% endif %}><a href="/buy/" class="buy">Buy</a></li>
-              </ul>
-            </div>
-          </div>
+          <header>
+          	<div>
+							<h1 class="title"><a href="/">Mirobot</a></h1>
+							<ul>
+								<li{% if page.url contains '/products/mirobot/' %} class="selected"{% endif %}><a href="/products/mirobot/">Product</a></li>
+								<li{% if page.url contains '/education/' %} class="selected"{% endif %}><a href="/education/">Education</a></li>
+								<li{% if page.url contains '/build/' %} class="selected"{% endif %}><a href="/build/">Build</a></li>
+								<li{% if page.url contains '/buy/' %} class="selected"{% endif %}><a href="/buy/" class="button">Buy</a></li>
+							</ul>
+						</div>
+          </header>
+          <div id="content">
           {{ content }}
-          <div id="footer">
-            <div class="inner">
+          </div>
+          <footer>
+          	<div class="inner">
+            	<div class="social">
+								<span class="links">
+									<a href="https://twitter.com/mirobot_io">
+										<span class="fa-stack fa">
+											<i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+											<i class="fa fa-twitter fa-stack-1x"></i>
+										</span>
+									</a>
+									<a href="https://github.com/mirobot"><i class="fa fa-2x fa-github fa-inverse" ></i></a>
+									<a href="https://www.facebook.com/mirobot.io/">
+										<span class="fa-stack fa">
+											<i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+											<i class="fa fa-facebook fa-stack-1x"></i>
+										</span>
+									</a>
+									<a href="https://www.youtube.com/results?search_query=mirobot">
+										<span class="fa-stack fa">
+											<i class="fa fa-circle fa-inverse fa-stack-2x"></i>
+											<i class="fa fa-youtube fa-stack-1x"></i>
+										</span>
+									</a>
+								</span>
+            		<span class="signup">
+									<form action="http://mirobot.us3.list-manage.com/subscribe/post?u=9a2ab7086502ca3b5d3b7058c&amp;id=ab6be717cb" method="post" name="mc-embedded-subscribe-form" target="_blank">
+										<p>Register your email to be kept up to date...</p>
+										<input type="email" placeholder="your@email.com" name="EMAIL">
+										<button>Register</button>
+									</form>
+								</span>
+            	</div>
               <div class="footlinks">
                 <h3 class="logo">Mirobot</h3>
                 <ul>
                   <li><a href="/about/">About</a></li>
-                  <li><a href="/blog/">Blog</a></li>
+                  <li><a href="/blog/">News</a></li>
                   <li><a href="/press/">Press</a></li>
                   <li><a href="/buy/">Buy</a></li>
-                  <li><a href="/signup/">Join the mailing list</a></li>
+                  <li><a href="/contact/">Contact</a></li>
                   <li><a href="https://groups.google.com/forum/#!forum/mirobot">Get help</a></li>
-                  <li><a href="/contact/">Get in touch</a></li>
                 </ul>
               </div>
               <div class="footlinks">
@@ -55,7 +91,6 @@ ga('send', 'pageview');
                   <li><a href="http://learn.mirobot.io/docs/building-the-v2-mirobot/">Build Mirobot</a></li>
                   <li><a href="http://learn.mirobot.io/docs/drawing-shapes/">Make it draw</a></li>
                   <li><a href="http://learn.mirobot.io/docs/update-arduino-serial/">Build the firmware</a></li>
-                  <li><a href="/build/fabricate/">Make your own parts</a></li>
                 </ul>
               </div>
               <div class="footlinks">
@@ -65,12 +100,22 @@ ga('send', 'pageview');
                   <li><a href="https://github.com/mirobot/mirobot-pcb">PCB designs</a></li>
                   <li><a href="https://github.com/mirobot/mirobot-arduino">Arduino firmware</a></li>
                   <li><a href="https://github.com/mirobot/mirobot-wifi">WiFi module firmware</a></li>
-                  <li><a href="https://github.com/mirobot/mirobot-ui">User Interface</a></li>
+                  <li><a href="https://github.com/mirobot/apps.mirobot.io">Apps</a></li>
                 </ul>
               </div>
+							<p class="copyright">&copy; 2016 Pirt Design & Technology Ltd</p>
             </div>
-          </div>
+          </footer>
         </div>
 
     </body>
+    <script type="text/javascript">
+function initshrink() {
+    window.addEventListener('scroll', function(e){
+        var distanceY = window.pageYOffset || document.documentElement.scrollTop;
+				document.querySelector("header").className = (distanceY > 200 ? "small" : '');
+    });
+}
+window.onload = initshrink();    
+    </script>
 </html>

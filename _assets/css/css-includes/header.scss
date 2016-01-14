@@ -1,0 +1,91 @@
+$transition-speed: 0.25s;
+
+header{
+	position:fixed;
+	z-index:99999;
+	background:#fff;
+	top:0;
+	left:0;
+	right:0;
+	padding:10px 40px;
+	vertical-align:top;
+	@include box-shadow(0px, 0px, 12px, -4px, rgba(0, 0, 0, 0.6));
+	@media all and (max-width: 870px) {
+		padding:10px;
+	}
+	div{
+		position:relative;
+	}
+
+	h1 {
+		@include transition(font-size, $transition-speed);
+		font-size:300%;
+		margin:0;
+		display:inline-block;
+		@media all and (max-width: 870px) {
+			font-size:160%;
+		}
+
+		a {
+			text-decoration:none;
+			color:#000;
+		}
+	}
+	
+	ul {
+		@include transition(margin-top, $transition-speed);
+		display:inline-block;
+		position:absolute;
+		right:0;
+		padding:0;
+		margin-top:10px;
+		@media all and (max-width: 870px) {
+			padding:0 10px;
+			margin-top:10px;
+		}
+		@media all and (max-width: 440px) {
+			position:static;
+		}
+		li {
+			list-style-type:none;
+			display:inline;
+			padding:0;
+			margin-left:50px;
+			@media all and (max-width: 870px) {
+				margin-left:10px;
+			}
+
+			a {
+				font-size:130%;
+				text-decoration:none;
+			}
+			a.button {
+				color:#FFF;
+				font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+			}
+		}
+
+		li.selected {
+			border-bottom:10px solid #EEE;
+		}
+			
+		@media all and (max-width: 870px) {
+			font-size:80%;
+		}
+	}
+}
+header.small{
+	h1{
+		font-size:200%;
+	}
+	ul{
+		margin-top:-2px;
+	}
+}
+@media all and (max-width: 870px) {
+	header.small{
+		h1{
+			font-size:140%;
+		}
+	}
+}

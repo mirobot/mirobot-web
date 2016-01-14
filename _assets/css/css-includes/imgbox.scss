@@ -1,0 +1,49 @@
+.imgbox{
+  background-attachment:fixed;
+  background-position:center;
+  background-size:cover;
+  text-align:center;
+  padding:0;
+  position:relative;
+	height:70vmin;
+	vertical-align:center;
+	min-height:300px;
+	
+	@media all and (max-width: 900px) {
+		background-attachment:scroll;
+		background-position:center top;
+  }
+	
+	.inner{
+		@include vertical-align();
+	}
+	
+  h2{
+		font-size: 250%;
+		text-align:center;
+		margin:10px;
+		padding:5px 20px;
+		background-color:rgba(255, 255, 255, 0.8);
+		display:inline-block;
+		line-height:150%;
+		color:#000;
+	
+		@media all and (max-width: 900px) {
+			font-size:180%;
+		}
+		@media all and (max-width: 640px) {
+			font-size:130%;
+			padding:3px 0;
+			margin:3px;
+		}
+	}
+}
+
+#home1{    background-image:url('/assets/bg/home.jpg');}
+#home2{ background-image:url('/assets/bg/kids.jpg');}
+#home3{ background-image:url('/assets/bg/floor.jpg');}
+#about .imgbox { background-image:url('/assets/bg/about.jpg');}
+#build .imgbox { background-image:url('/assets/bg/build.jpg');}
+#contactImg { background-image:url('/assets/bg/contact.jpg');}
+#teach{ background-image:url('/assets/bg/kids.jpg');}
+#apps{ background-image:url('/assets/bg/apps.jpg');}
