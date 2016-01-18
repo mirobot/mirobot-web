@@ -93,18 +93,12 @@
 		p{
 			display: inline;
 			&:before {
-				color: #EEE;
+				color: #DDD;
 				content: open-quote;
 				font-size: 4em;
 				line-height: 0.1em;
-				vertical-align: -0.5em;
-			}
-			&:after{
-				color: #EEE;
-				content: close-quote;
-				font-size: 4em;
-				line-height: 0.1em;
-				vertical-align: -0.5em;
+				position:relative;
+				top:0.5em;
 			}
 		}
 	}
@@ -162,5 +156,15 @@
 	p{
 		font-size:120%;
 		margin:20px 0;
+	}
+}
+
+#techSpecs{
+	h2{
+		margin-bottom:20px;
+	}
+	.detail{
+		vertical-align:top;
+		display:inline-block;
 	}
 }

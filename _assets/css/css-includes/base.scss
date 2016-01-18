@@ -50,6 +50,9 @@ section{
 		font-size:150%;
 		padding:30px 0;
 	}
+	&.grey{
+		background-color:$grey;
+	}
 	&.orange{
 		background-color:$orange;
 		color:#FFF;
