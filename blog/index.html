@@ -3,8 +3,8 @@ layout: default
 title: Blog
 ---
 
-<div id="home">
-  <section id="blogs">
+<div id="blogs">
+  <section>
     {% assign first_post = true %}
     {% for post in paginator.posts %}
       <div class="blogpost {% cycle 'odd', 'even' %}">

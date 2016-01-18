@@ -1,0 +1,76 @@
+footer{
+  background:#000;
+  padding:40px;
+	color:#FFF;
+	@include box-shadow(0px, 0px, 10px, 0px, rgba(0, 0, 0, 1));
+
+	.footlinks{
+		width:290px;
+		display:inline-block;
+		vertical-align:top;
+
+		h3{
+			font-size:150%;
+			margin-top:0.25em;
+			line-height:1em
+		}
+		ul{
+			margin-top:20px;
+		}
+		h3.logo{
+			color:#FFF;
+			font-size:200%;
+			margin-top:0;
+		}
+	}
+
+	li{
+		list-style-type: none;
+		margin:8px 0;
+
+		a{
+			color:#FFF;
+			text-decoration:none;
+						
+			:visited{color:#FFF;}
+			:hover{color:#CCC;}
+		}
+	}
+	.social{
+		margin-bottom:40px;
+	}
+	.links{
+		float:right;
+		font-size:150%;
+		vertical-align:top;
+		a{
+			text-decoration:none;
+		}
+		i, span.fa{
+			vertical-align:top;
+		}
+	}
+	.signup{
+		display:inline-block;
+		p{
+			padding:0 0 3px 0;
+			margin:0;
+			font-size:85%;
+		}
+		input{
+			width:300px;
+			font-size:90%;
+			padding:2px;
+		}
+		button{
+			@include rounded(0.35em);
+			background:#FFF;
+			border:none;
+			font-size:90%;
+			padding:4px;
+		}
+	}
+	.copyright{
+		font-size:80%;
+	}	
+}

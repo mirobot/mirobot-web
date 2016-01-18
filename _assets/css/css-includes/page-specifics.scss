@@ -1,0 +1,170 @@
+#home1 .button{
+  font-size: 200%;
+  line-height:150%;
+  padding:5px 20px;
+  display:inline-block;
+  margin:60px auto 0;
+	
+	@media all and (max-width: 900px) {
+		font-size:150%;
+		margin-top:20px
+  }
+  
+	@media all and (max-width: 640px) {
+		font-size:130%;
+		padding:3px 0;
+		margin:3px;
+	}
+}
+
+
+/* Blog pages */
+.blogpost{
+  padding: 30px 0;
+	h2{
+		font-size:200%;
+	}
+	h3{
+		font-size:130%;
+	}
+	h2 a{
+		text-decoration:none;
+	}
+	.date{
+		float:right;
+		font-size: 200%;
+		font-family: 'second_chances';
+		color: #CCC;
+	}
+}
+
+.blogpost .inner, #blogs .inner{
+  max-width:720px;
+  padding:0 90px;
+}
+#blogs .pagination{
+  padding:30px 0;
+}
+#blogs img, .blogpost img{
+  max-width:100%;
+}
+
+#howitworks{
+	background-color: $orange;
+	color:#FFF;
+	text-align:center;
+	padding:30px 0;
+	h3{
+		font-size:200%;
+		text-align:left;
+	}
+	.ss-slide{
+		text-align:center;
+		img{
+			max-width:100%;
+		}
+	}
+	h4{
+		font-family:'second_chances';
+		font-size:120%;
+	}
+	.ss-index-number{
+		background:rgba(255, 255, 255, 0.5);
+		color:$orange;
+	}
+	.ss-selected{
+		background:rgba(255, 255, 255, 1);
+	}
+}
+
+#testimonials{
+	text-align:center;
+	padding:50px 0;
+	blockquote{
+		font-size:150%;
+  	quotes: "\201C""\201D""\2018""\2019";
+		cite{
+			font-size:70%;
+			display:block;
+			margin-top:20px;
+			text-align:right;
+			color:#666;
+		}
+		p{
+			display: inline;
+			&:before {
+				color: #DDD;
+				content: open-quote;
+				font-size: 4em;
+				line-height: 0.1em;
+				position:relative;
+				top:0.5em;
+			}
+		}
+	}
+	.ss-slide{
+		margin:20px 0;
+	}
+	.ss-index-number{
+		background:rgba(242, 88, 3, 0.5);
+		color:#FFF;
+	}
+	.ss-selected{
+		background:rgba(242, 88, 3, 1);
+	}
+}
+
+#coverage{
+	background-color: $orange;
+	color:#FFF;
+	padding:30px 0;
+	h3{
+		font-size:200%;
+		text-align:left;
+	}
+	ul{
+		text-align:center;
+		li{
+			list-style-type:none;
+			display:inline-block;
+			margin:20px;
+		}
+	}
+}
+
+#product{
+	h2{
+		font-size:200%;
+		margin:20px 0;
+	}
+	p{
+		font-size:150%;
+		margin:20px 0;
+	}
+}
+
+#box{
+	padding-bottom:0;
+}
+.explanation{
+	padding:40px 0;
+	h2{
+		font-size:140%;
+		margin:0;
+		padding-top:20px;
+	}
+	p{
+		font-size:120%;
+		margin:20px 0;
+	}
+}
+
+#techSpecs{
+	h2{
+		margin-bottom:20px;
+	}
+	.detail{
+		vertical-align:top;
+		display:inline-block;
+	}
+}

@@ -1,0 +1,28 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
+html{overflow: hidden;}
+
+body {
+	overflow: auto;
+  background-color: #FFF;
+  font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+  font-size: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-family:'second_chances';
+  font-weight:normal;
+}
+h1 { margin-bottom: 1em; }
+p {
+margin: 1em 0;
+}
+a{
+color:#000;
+}
